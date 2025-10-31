@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bude Global OSS - Introduction to Open Source Software | BUDE</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.0/reveal.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.0/theme/black.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
     <style>
         /* BUDE Brand Font */
         @font-face {
@@ -66,7 +68,9 @@
             font-size: 28px;
         }
 
-        .reveal h1, .reveal h2, .reveal h3 {
+        .reveal h1,
+        .reveal h2,
+        .reveal h3 {
             text-transform: none;
             font-weight: 700;
             font-family: 'Molot', sans-serif;
@@ -249,8 +253,65 @@
             border-radius: 8px;
             margin: 1em 0;
         }
+
+
+        /* Sticky footer */
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(115, 105, 255, 0.7);
+            backdrop-filter: blur(8px);
+            color: white;
+            padding: 18px 10px;
+            text-align: center;
+            font-family: 'Segoe UI', sans-serif;
+            z-index: 1000;
+        }
+
+        footer .social-links {
+            margin-bottom: 8px;
+        }
+
+        footer a {
+            color: white;
+            margin: 0 8px;
+            text-decoration: none;
+            font-size: 1.4rem;
+            vertical-align: middle;
+            transition: color 0.3s ease, transform 0.2s ease;
+        }
+
+        footer a:hover {
+            color: #90caf9;
+            transform: scale(1.1);
+        }
+
+        /* Brand link avatar */
+        footer .brand-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .brand-avatar {
+            height: 26px;
+            width: 26px;
+            border-radius: 50%;
+            vertical-align: middle;
+            border: 2px solid #90caf9;
+            object-fit: cover;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+            color: #cfd8dc;
+            margin-top: 5px;
+        }
     </style>
 </head>
+
 <body>
     <div class="reveal">
         <div class="slides">
@@ -259,7 +320,8 @@
             <section class="center gradient-bg">
                 <center><img src="assets/images/budeglobal_logo.png" alt="BUDE Logo" class="bude-logo"></center>
                 <h1 style="font-size: 3em; margin: 0.5em 0;">Bude Global OSS</h1>
-                <h3 style="color: var(--bude-primary); font-size: 1.4em; margin: 0.5em 0;">Introduction to <br> Open Source Software</h3>
+                <h3 style="color: var(--bude-primary); font-size: 1.4em; margin: 0.5em 0;">Introduction to <br> Open
+                    Source Software</h3>
                 <!-- <p style="margin-top: 2em; font-size: 1.3em; color: var(--bude-text-dark);">
                     <span class="gradient-accent">Your friendly guide to open source</span> 🚀
                 </p>
@@ -278,7 +340,8 @@
                 <div style="display: flex; align-items: center; gap: 3em; max-width: 900px;">
                     <!-- Photo placeholder - replace with actual photo later -->
                     <div style="flex-shrink: 0;">
-                        <div style="width: 250px; height: 250px; border-radius: 50%; background: linear-gradient(135deg, var(--bude-primary), var(--bude-purple)); display: flex; align-items: center; justify-content: center; color: white; font-size: 4em; font-weight: bold; border: 5px solid white; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
+                        <div
+                            style="width: 250px; height: 250px; border-radius: 50%; background: linear-gradient(135deg, var(--bude-primary), var(--bude-purple)); display: flex; align-items: center; justify-content: center; color: white; font-size: 4em; font-weight: bold; border: 5px solid white; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
                             APG
                         </div>
                     </div>
@@ -296,10 +359,14 @@
                                 <span class="emoji">🌟</span> Open Source maintainer since 2024
                             </p>
                             <p style="margin: 1em 0 0.3em 0;">
-                                <span class="emoji">🔗</span> <a href="https://github.com/aravind-govindhasamy" target="_blank" style="color: var(--bude-purple);">github.com/aravind-govindhasamy</a>
+                                <span class="emoji">🔗</span> <a href="https://github.com/aravind-govindhasamy"
+                                    target="_blank"
+                                    style="color: var(--bude-purple);">github.com/aravind-govindhasamy</a>
                             </p>
                             <p style="margin: 0.3em 0;">
-                                <span class="emoji">🌐</span> <a href="https://aravind-govindhasamy.github.io" target="_blank" style="color: var(--bude-purple);">aravind-govindhasamy.github.io</a>
+                                <span class="emoji">🌐</span> <a href="https://aravind-govindhasamy.github.io"
+                                    target="_blank"
+                                    style="color: var(--bude-purple);">aravind-govindhasamy.github.io</a>
                             </p>
                         </div>
                     </div>
@@ -331,7 +398,8 @@
                 </div>
                 <div style="margin-top: 2em;">
                     <p style="font-size: 1.2em;">
-                        <span class="emoji"></span> <strong style="color: var(--bude-primary);">Bude Global Enterprise - India</strong>
+                        <span class="emoji"></span> <strong style="color: var(--bude-primary);">Bude Global Enterprise -
+                            India</strong>
                     </p>
                     <p style="margin-top: 0.5em; color: var(--bude-purple);">
                         Your friendly neighborhood OSS community
@@ -341,7 +409,23 @@
 
         </div>
     </div>
-
+     <footer>
+        <div class="social-links">
+            <a href="https://budeglobal.in" target="_blank" class="brand-link">
+                <img src="https://github.com/BUDEGlobalEnterprise.png" alt="Bude Global Avatar" class="brand-avatar">
+            </a> |
+            <a href="https://blog.budeglobal.in" title="Bude Global Blog"><i class="ri-earth-line"></i></a>
+            <a href="https://github.com/budeglobalenterprise/bude-first-contribution" title="Project Repo"
+                target="_blank"><i class="ri-git-repository-fill"></i></a>
+            <a href="https://github.com/budeglobalenterprise" title="GitHub"><i class="ri-github-fill"></i></a>
+            <a href="https://linkedin.com/company/budeglobal" title="LinkedIn"><i class="ri-linkedin-box-fill"></i></a>
+            <a href="https://www.youtube.com/@BudeGlobalEnterprise" title="YouTube"><i class="ri-youtube-fill"></i></a>
+            <a href="https://x.com/budeglobalerp" title="Twitter/X"><i class="ri-twitter-x-line"></i></a>
+            <a href="https://www.instagram.com/budeglobal" title="Instagram"><i class="ri-instagram-line"></i></a>
+        </div>
+        <p>© 2025 Bude Global Enterprise — Built with ❤️ for Open Collaboration</p>
+    </footer>
+   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.0/reveal.min.js"></script>
     <script>
         // Load and render slides from JSON
@@ -389,7 +473,7 @@
                     backgroundTransition: 'fade',
                     controls: true,
                     progress: true,
-                    center: false,
+                    center: true,
                     width: 1280,
                     height: 720,
                     margin: 0.1,
@@ -515,4 +599,5 @@
         document.addEventListener('DOMContentLoaded', loadSlides);
     </script>
 </body>
+
 </html>
