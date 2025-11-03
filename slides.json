@@ -350,6 +350,71 @@
         ]
       },
       {
+        "id": "oss-in-2025-and-beyond",
+        "title": "OSS in 2025 and Beyond",
+        "slides": [
+          {
+            "type": "topic-title",
+            "title": "OSS in 2025 and Beyond",
+            "box": {
+              "content": "The future of open source is bright and full of opportunities."
+            }
+          },
+          {
+            "type": "content",
+            "emoji": "🏢",
+            "title": "Companies Developing and Using OSS",
+            "box": {
+              "title": "Who is leading the charge?",
+              "list": [
+                {
+                  "emoji": "⭐",
+                  "text": "<strong>Google:</strong> Kubernetes, TensorFlow, Android"
+                },
+                {
+                  "emoji": "⭐",
+                  "text": "<strong>Microsoft:</strong> VS Code, .NET, TypeScript"
+                },
+                {
+                  "emoji": "⭐",
+                  "text": "<strong>Meta:</strong> React, PyTorch, GraphQL"
+                },
+                {
+                  "emoji": "⭐",
+                  "text": "<strong>Amazon:</strong> OpenSearch, AWS SDKs, Firecracker"
+                }
+              ]
+            }
+          },
+          {
+            "type": "content",
+            "emoji": "🚀",
+            "title": "The Future of OSS",
+            "box": {
+              "title": "What to expect?",
+              "list": [
+                {
+                  "emoji": "🤖",
+                  "text": "AI and Machine Learning will be dominated by OSS."
+                },
+                {
+                  "emoji": "🔒",
+                  "text": "Security and sustainability will be key focus areas."
+                },
+                {
+                  "emoji": "🌍",
+                  "text": "More diversity and inclusion in the community."
+                },
+                {
+                  "emoji": "💼",
+                  "text": "Open source will become the default for new software."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
         "id": "why-oss-matters",
         "title": "Why Open Source Matters",
         "slides": [
