@@ -2,6 +2,32 @@
   "presentation": {
     "topics": [
       {
+        "id": "title",
+        "title": "Title Slide",
+        "slides": [
+          {
+            "type": "title",
+            "title": "Bude Global OSS",
+            "subtitle": "Introduction to <br> Open Source Software"
+          }
+        ]
+      },
+      {
+        "id": "presenter",
+        "title": "Presenter Slide",
+        "slides": [
+          {
+            "type": "presenter",
+            "name": "Aravind Govindhasamy",
+            "title": "Founder of BUDE",
+            "experience": "Software Developer for 3 years",
+            "oss_experience": "Open Source maintainer since 2024",
+            "github": "https://github.com/aravind-govindhasamy",
+            "website": "https://aravind-govindhasamy.github.io"
+          }
+        ]
+      },
+      {
         "id": "what-is-oss",
         "title": "What is Open Source Software (OSS)?",
         "slides": [
@@ -664,6 +690,29 @@
             },
             "note": {
               "text": "<span class=\"emoji\">💡</span> This is a beginner-friendly repository designed for practicing!"
+            }
+          }
+        ]
+      },
+      {
+        "id": "qa-and-thank-you",
+        "title": "Q&A and Thank You",
+        "slides": [
+          {
+            "type": "qa",
+            "title": "Let's Chat! 💬",
+            "content": "Got questions? Confused about something?<br><span class=\"gradient-accent\">No question is too basic!</span>"
+          },
+          {
+            "type": "thank-you",
+            "title": "Thanks for hanging out! 🎉",
+            "box": {
+              "content": "<span class=\"emoji\">🚀</span> Ready to make your first contribution?<br><span class=\"gradient-accent\">We'll be cheering you on!</span>",
+              "note": "Find us online • Join the community • Ship some code"
+            },
+            "footer": {
+              "org": "Bude Global Enterprise - India",
+              "tagline": "Your friendly neighborhood OSS community"
             }
           }
         ]

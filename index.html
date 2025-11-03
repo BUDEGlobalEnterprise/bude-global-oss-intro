@@ -316,96 +316,15 @@
     <div class="reveal">
         <div class="slides">
 
-            <!-- Title Slide (Hardcoded) -->
-            <section class="center gradient-bg">
-                <center><img src="assets/images/budeglobal_logo.png" alt="BUDE Logo" class="bude-logo"></center>
-                <h1 style="font-size: 3em; margin: 0.5em 0;">Bude Global OSS</h1>
-                <h3 style="color: var(--bude-primary); font-size: 1.4em; margin: 0.5em 0;">Introduction to <br> Open
-                    Source Software</h3>
-                <!-- <p style="margin-top: 2em; font-size: 1.3em; color: var(--bude-text-dark);">
-                    <span class="gradient-accent">Your friendly guide to open source</span> 🚀
-                </p>
-                <div class="presenter-info">
-                    <p>
-                        Presented by <strong>Aravind Govindhasamy</strong>
-                        (<a href="https://aravind-govindhasamy.github.io" target="_blank">aravind-govindhasamy.github.io</a>)
-                        <br>
-                        <span class="emoji">🇵🇭</span> Bude Global Enterprise - India
-                    </p>
-                </div> -->
-            </section>
 
-            <!-- Presenter Slide (Hardcoded) -->
-            <section class="center gradient-bg">
-                <div style="display: flex; align-items: center; gap: 3em; max-width: 900px;">
-                    <!-- Photo placeholder - replace with actual photo later -->
-                    <div style="flex-shrink: 0;">
-                        <div
-                            style="width: 250px; height: 250px; border-radius: 50%; background: linear-gradient(135deg, var(--bude-primary), var(--bude-purple)); display: flex; align-items: center; justify-content: center; color: white; font-size: 4em; font-weight: bold; border: 5px solid white; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
-                            APG
-                        </div>
-                    </div>
-                    <!-- Presenter Info -->
-                    <div style="text-align: left;">
-                        <h2 style="margin: 0 0 0.5em 0; font-size: 2.5em;">Aravind Govindhasamy</h2>
-                        <div style="font-size: 1.1em; line-height: 1.8;">
-                            <p style="margin: 0.5em 0;">
-                                <span class="emoji">👔</span> Founder of BUDE
-                            </p>
-                            <p style="margin: 0.5em 0;">
-                                <span class="emoji">💻</span> Software Developer for 3 years
-                            </p>
-                            <p style="margin: 0.5em 0;">
-                                <span class="emoji">🌟</span> Open Source maintainer since 2024
-                            </p>
-                            <p style="margin: 1em 0 0.3em 0;">
-                                <span class="emoji">🔗</span> <a href="https://github.com/aravind-govindhasamy"
-                                    target="_blank"
-                                    style="color: var(--bude-purple);">github.com/aravind-govindhasamy</a>
-                            </p>
-                            <p style="margin: 0.3em 0;">
-                                <span class="emoji">🌐</span> <a href="https://aravind-govindhasamy.github.io"
-                                    target="_blank"
-                                    style="color: var(--bude-purple);">aravind-govindhasamy.github.io</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
 
-            <!-- Dynamic Slides will be inserted here by JavaScript -->
 
-            <!-- Q&A Slide (Hardcoded) -->
-            <section class="center gradient-bg">
-                <h1>Let's Chat! 💬</h1>
-                <p style="margin-top: 1.5em; font-size: 1.2em; color: var(--bude-text-dark);">
-                    Got questions? Confused about something?<br>
-                    <span class="gradient-accent">No question is too basic!</span>
-                </p>
-            </section>
 
-            <!-- Thank You Slide (Hardcoded) -->
-            <section class="center gradient-bg">
-                <h1>Thanks for hanging out! 🎉</h1>
-                <div class="box" style="margin-top: 2em; max-width: 800px; margin-left: auto; margin-right: auto;">
-                    <p style="font-size: 1.1em; margin-bottom: 1em;">
-                        <span class="emoji">🚀</span> Ready to make your first contribution?<br>
-                        <span class="gradient-accent">We'll be cheering you on!</span>
-                    </p>
-                    <p class="small-text" style="margin-top: 1em;">
-                        Find us online • Join the community • Ship some code
-                    </p>
-                </div>
-                <div style="margin-top: 2em;">
-                    <p style="font-size: 1.2em;">
-                        <span class="emoji"></span> <strong style="color: var(--bude-primary);">Bude Global Enterprise -
-                            India</strong>
-                    </p>
-                    <p style="margin-top: 0.5em; color: var(--bude-purple);">
-                        Your friendly neighborhood OSS community
-                    </p>
-                </div>
-            </section>
+
+
+
+
+
 
         </div>
     </div>
@@ -428,30 +347,13 @@
    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.0/reveal.min.js"></script>
     <script>
-        // Load and render slides from JSON
         async function loadSlides() {
             try {
                 const response = await fetch('slides.json');
                 const data = await response.json();
 
                 const slidesContainer = document.querySelector('.reveal .slides');
-                const titleSlide = slidesContainer.children[0];
-                const presenterSlide = slidesContainer.children[1];
-                const qaSlide = slidesContainer.children[slidesContainer.children.length - 2];
-                const thankYouSlide = slidesContainer.lastElementChild;
-
-                // Remove hardcoded slides temporarily
-                titleSlide.remove();
-                presenterSlide.remove();
-                qaSlide.remove();
-                thankYouSlide.remove();
-
-                // Clear existing content
-                slidesContainer.innerHTML = '';
-
-                // Re-add title and presenter slides
-                slidesContainer.appendChild(titleSlide);
-                slidesContainer.appendChild(presenterSlide);
+                slidesContainer.innerHTML = ''; // Clear existing content
 
                 // Generate slides from JSON
                 data.presentation.topics.forEach(topic => {
@@ -460,10 +362,6 @@
                         slidesContainer.appendChild(section);
                     });
                 });
-
-                // Re-add Q&A and Thank You slides
-                slidesContainer.appendChild(qaSlide);
-                slidesContainer.appendChild(thankYouSlide);
 
                 // Initialize Reveal.js after slides are loaded
                 Reveal.initialize({
@@ -529,7 +427,50 @@
         function createSlide(slideData) {
             const section = document.createElement('section');
 
-            if (slideData.type === 'topic-title') {
+            if (slideData.type === 'title') {
+                section.classList.add('center', 'gradient-bg');
+                section.innerHTML = `
+                    <center><img src="assets/images/budeglobal_logo.png" alt="BUDE Logo" class="bude-logo"></center>
+                    <h1 style="font-size: 3em; margin: 0.5em 0;">${slideData.title}</h1>
+                    <h3 style="color: var(--bude-primary); font-size: 1.4em; margin: 0.5em 0;">${slideData.subtitle}</h3>
+                `;
+            } else if (slideData.type === 'presenter') {
+                section.classList.add('center', 'gradient-bg');
+                section.innerHTML = `
+                <div style="display: flex; align-items: center; gap: 3em; max-width: 900px;">
+                    <div style="flex-shrink: 0;">
+                        <div
+                            style="width: 250px; height: 250px; border-radius: 50%; background: linear-gradient(135deg, var(--bude-primary), var(--bude-purple)); display: flex; align-items: center; justify-content: center; color: white; font-size: 4em; font-weight: bold; border: 5px solid white; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
+                            APG
+                        </div>
+                    </div>
+                    <div style="text-align: left;">
+                        <h2 style="margin: 0 0 0.5em 0; font-size: 2.5em;">${slideData.name}</h2>
+                        <div style="font-size: 1.1em; line-height: 1.8;">
+                            <p style="margin: 0.5em 0;">
+                                <span class="emoji">👔</span> ${slideData.title}
+                            </p>
+                            <p style="margin: 0.5em 0;">
+                                <span class="emoji">💻</span> ${slideData.experience}
+                            </p>
+                            <p style="margin: 0.5em 0;">
+                                <span class="emoji">🌟</span> ${slideData.oss_experience}
+                            </p>
+                            <p style="margin: 1em 0 0.3em 0;">
+                                <span class="emoji">🔗</span> <a href="${slideData.github}"
+                                    target="_blank"
+                                    style="color: var(--bude-purple);">github.com/aravind-govindhasamy</a>
+                            </p>
+                            <p style="margin: 0.3em 0;">
+                                <span class="emoji">🌐</span> <a href="${slideData.website}"
+                                    target="_blank"
+                                    style="color: var(--bude-purple);">aravind-govindhasamy.github.io</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            `;
+            } else if (slideData.type === 'topic-title') {
                 // Topic title slide - center it
                 section.classList.add('center');
                 section.innerHTML = `
@@ -545,6 +486,35 @@
                     ${slideData.box ? createBox(slideData.box) : ''}
                     ${slideData.list ? createList(slideData.list) : ''}
                     ${slideData.note ? `<p class="small-text" style="margin-top: 1.5em;">${slideData.note.text}</p>` : ''}
+                `;
+            } else if (slideData.type === 'qa') {
+                section.classList.add('center', 'gradient-bg');
+                section.innerHTML = `
+                    <h1>${slideData.title}</h1>
+                    <p style="margin-top: 1.5em; font-size: 1.2em; color: var(--bude-text-dark);">
+                        ${slideData.content}
+                    </p>
+                `;
+            } else if (slideData.type === 'thank-you') {
+                section.classList.add('center', 'gradient-bg');
+                section.innerHTML = `
+                    <h1>${slideData.title}</h1>
+                    <div class="box" style="margin-top: 2em; max-width: 800px; margin-left: auto; margin-right: auto;">
+                        <p style="font-size: 1.1em; margin-bottom: 1em;">
+                            ${slideData.box.content}
+                        </p>
+                        <p class="small-text" style="margin-top: 1em;">
+                            ${slideData.box.note}
+                        </p>
+                    </div>
+                    <div style="margin-top: 2em;">
+                        <p style="font-size: 1.2em;">
+                            <span class="emoji"></span> <strong style="color: var(--bude-primary);">${slideData.footer.org}</strong>
+                        </p>
+                        <p style="margin-top: 0.5em; color: var(--bude-purple);">
+                            ${slideData.footer.tagline}
+                        </p>
+                    </div>
                 `;
             }
 
