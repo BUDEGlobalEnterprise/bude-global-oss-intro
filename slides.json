@@ -224,6 +224,67 @@
         ]
       },
       {
+        "id": "getting-started-with-oss",
+        "title": "Getting Started with OSS",
+        "slides": [
+          {
+            "type": "topic-title",
+            "title": "Getting Started with OSS",
+            "box": {
+              "content": "Contributing to open source can be rewarding. Here\'s how you can start."
+            }
+          },
+          {
+            "type": "content",
+            "emoji": "🔍",
+            "title": "Finding a Project",
+            "box": {
+              "title": "Where to look?",
+              "list": [
+                {
+                  "emoji": "⭐",
+                  "text": "Explore projects on GitHub, GitLab, or Bitbucket."
+                },
+                {
+                  "emoji": "💡",
+                  "text": "Look for projects you already use and want to improve."
+                },
+                {
+                  "emoji": "🏷️",
+                  "text": "Search for issues with labels like \"good first issue\" or \"help wanted\"."
+                }
+              ]
+            }
+          },
+          {
+            "type": "content",
+            "emoji": "🤔",
+            "title": "What to Contribute?",
+            "box": {
+              "title": "It\'s not just about code!",
+              "list": [
+                {
+                  "emoji": "📖",
+                  "text": "Improve documentation."
+                },
+                {
+                  "emoji": "🐛",
+                  "text": "Report or fix bugs."
+                },
+                {
+                  "emoji": "💡",
+                  "text": "Suggest new features."
+                },
+                {
+                  "emoji": "🎨",
+                  "text": "Help with design."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
         "id": "why-oss-matters",
         "title": "Why Open Source Matters",
         "slides": [
